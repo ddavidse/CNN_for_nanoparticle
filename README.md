@@ -25,4 +25,6 @@ PCA - trajectory.py is a seperate version of CNN_masterscript that was used for 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Reproducibility: this is only possible when working on the CPU and setting a random seed. When using a GPU via CUDA, there is inherent randomness that, to our knowledge, cannot be prevented from inside a python script. For more information, see https://pytorch.org/docs/stable/notes/randomness.html#pytorch
+REPRODUCIBILITY
+
+This is only possible when working on the CPU and setting a random seed. When using a GPU via CUDA, there is inherent randomness that, to our knowledge, cannot be prevented from inside a python script. For more information, see https://pytorch.org/docs/stable/notes/randomness.html#pytorch
