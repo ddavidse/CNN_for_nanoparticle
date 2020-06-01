@@ -41,14 +41,13 @@ if 'net' in locals():
 CUDA_flag = False
 
 # Place where output folders are created:
-DT = r'C:\Users\ddavidse\Desktop'
+DT = r''
 
 # Location of original data:
-dirName = r'C:\SharedData\Datasets for CNN\100x100 downsampled from 150x150'
+dirName = r''
 
 # Location of fooling data:
-dataset_fool_dir = r'C:\SharedData\Datasets for CNN\elephant set'
-#dataset_fool_dir = r'C:\SharedData\Datasets for CNN\mirrored set'
+dataset_fool_dir = r''
 
 BS = 50             # batch size
 epochs = 12         # number of epochs for training
@@ -58,7 +57,7 @@ fig_font_size = 12  # font size for figures
 # %% ----- Control randomness -----------------------------------------------------------------------------------
 
 random_initialization = True        # set False to use saved_weights
-saved_weights = r'D:\ddavidse\Desktop\5 class network runs\network runs - background - full data\Network_run_16\initial_weights.pth'
+saved_weights = r''
 
 set_random_seed = False             # set True to use seed_value
 seed_value = 784410
@@ -1622,7 +1621,7 @@ if baseline_flag:
         
     
 os.chdir(DT)
-#os.startfile(fname)
+os.startfile(fname)
         
 
 
