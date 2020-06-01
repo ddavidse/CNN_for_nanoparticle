@@ -45,3 +45,13 @@ To use the example code:
 REPRODUCIBILITY
 
 This is only possible when working on the CPU and setting a random seed. This is done in example.py, which is why the training curve looks the same every time. When using a GPU via CUDA, there is inherent randomness that, to our knowledge, cannot be prevented from inside a python script. For more information, see https://pytorch.org/docs/stable/notes/randomness.html#pytorch
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+OPENMAX EXAMPLE:
+
+1. Download CNN_functions.py, OpenMax_masterscript.py, compute_openmax.py and evt_fitting.py from the folder OpenMax_code and put them in the same folder
+2. On line 44, enter the directory where outputs should be stored
+3. On line 47, enter the directory of the main dataset used for training
+4. On line 50, enter the directory of the fooling dataset
+5. Run the script
