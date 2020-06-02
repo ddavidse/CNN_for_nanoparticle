@@ -1,4 +1,4 @@
-# ConvNet
+# CNN_for_nanoparticle
 This repository contains Convolutional Neural Network code used for the paper "Convolutional Neural Network Applied for Nanoparticle Classification using Coherent Scaterometry Data". 
 
 Authors: D. KOLENOV*, D. DAVIDSE , J. LE CAM , AND S.F. PEREIRA
