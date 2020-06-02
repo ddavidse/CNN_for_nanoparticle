@@ -10,7 +10,7 @@ Authors: D. KOLENOV*, D. DAVIDSE , J. LE CAM , AND S.F. PEREIRA
 To use the code:
 
 1. Download the code files CNN_functions.py and CNN_masterscript.py and put them in the same folder
-2. Download the datasets here (insert url later)
+2. Download the datasets from https://doi.org/10.4121/uuid:516ab2fa-4c47-42f8-b614-5e283889b218
 3. Open CNN_masterscript.py
 2. On lines 46 and 49 (and optionally also 52) enter the correct paths
 3. Use lines 56-98 to set the desired parameters and features
@@ -30,15 +30,14 @@ EXAMPLE
 To use the example code:
 
 1. Download the code files example.py and CNN_functions.py and put them in the same folder
-2. Download the saved weights file initial_weights_for_example.pth'
-3. Download the dataset "main dataset - 100x100" from (insert url here)
-4. Download the dataset "elephants - 100x100" from (insert url here)
-5. Open example.py
-6. On line 46, enter the desired folder to store outputs
-7. On line 49, enter the location of training data (the folder where the downloaded main dataset is stored)
-8. On line 52, enter the location of the fooling data (the folder where the downloaded elephant dataset is stored)
-9. On line 62, enter the location of the downloaded weights file
-10. Run the script
+2. Download the saved weights file "initial_weights_for_example.pth"
+3. Download the datasets  from https://doi.org/10.4121/uuid:516ab2fa-4c47-42f8-b614-5e283889b218
+4. Open example.py
+5. On line 46, enter the desired folder to store outputs
+6. On line 49, enter the location of "main dataset - 100x 100"
+7. On line 52, enter the location of "elephants - 100x 100"
+8. On line 62, enter the location of "initial_weights_for_example.pth"
+9. Run the script
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -48,7 +47,7 @@ This is only possible when working on the CPU and setting a random seed. This is
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-OPENMAX EXAMPLE:
+OPENMAX USE:
 
 1. Download CNN_functions.py, OpenMax_masterscript.py, compute_openmax.py and evt_fitting.py from the folder OpenMax_code and put them in the same folder
 2. On line 44, enter the directory where outputs should be stored
