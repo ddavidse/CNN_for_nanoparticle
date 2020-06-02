@@ -7,7 +7,7 @@ Authors: D. KOLENOV*, D. DAVIDSE , J. LE CAM , AND S.F. PEREIRA
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-To use the code:
+MAIN CODE GUIDE:
 
 1. Download the code files CNN_functions.py and CNN_masterscript.py and put them in the same folder
 2. Download the datasets from https://doi.org/10.4121/uuid:516ab2fa-4c47-42f8-b614-5e283889b218
@@ -25,7 +25,7 @@ PCA - trajectory.py is a seperate version of CNN_masterscript that was used for 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-EXAMPLE
+EXAMPLE GUIDE:
 
 To use the example code:
 
@@ -47,7 +47,7 @@ This is only possible when working on the CPU and setting a random seed. This is
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-OPENMAX USE:
+OPENMAX GUIDE:
 
 1. Download CNN_functions.py, OpenMax_masterscript.py, compute_openmax.py and evt_fitting.py from the folder OpenMax_code and put them in the same folder
 2. On line 44, enter the directory where outputs should be stored
