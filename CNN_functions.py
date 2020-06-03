@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Dec 20 11:17:17 2019
+Created on Tue May 12 10:37:36 2020
 
+@author: Dmytro Kolenov
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 20 11:17:17 2019
 @author: ddavidse
 """
 
@@ -130,8 +136,9 @@ def plot_confusion_matrix(cm, classes, normalize='none', cmap=plt.cm.Blues, perc
         normalize_flag = True
         cmnl = []
         for i in range(len(cm)):
-            cmnl.append(cm[i] / float(sum(cm[i])))
-            # in case of no CUDA: if this returns an error, replace cm[i] by cm[i].float()
+            # For the CUDA powered division
+            #    cmnl.append(cm[i] / float(sum(cm[i])))
+            cmnl.append( cm[i].float() / float( sum(cm[i])))    
         cm = torch.stack(cmnl)
         if percentage:
             cm = 100*cm
@@ -143,8 +150,9 @@ def plot_confusion_matrix(cm, classes, normalize='none', cmap=plt.cm.Blues, perc
         normalize_flag = True
         cmnl = []
         for i in range(len(cm)):
-            cmnl.append(cm[i] / float(sum(sum(cm))))
-            # in case of no CUDA: if this returns an error, replace cm[i] by cm[i].float()
+            # For the CUDA powered division
+            #cmnl.append(cm[i] / float(sum(sum(cm))))
+            cmnl.append(cm[i].float() / float(sum(sum(cm))))
         cm = torch.stack(cmnl)
         if percentage:
             cm = 100*cm

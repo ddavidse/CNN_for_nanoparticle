@@ -43,13 +43,13 @@ if 'net' in locals():
 # %%  ----- Set Parameters and Folders -----------------------------------------------------------------------------------
 
 # Place where output folders are created (does not have to be desktop):
-DT = r''
+DT = r"...\outputFolder"
 
 # Location of training data:
-dirName = r''
+dirName = r"...\final datasets\main dataset - 100x100"
 
 # Location of fooling data:
-dataset_fool_dir = r''
+dataset_fool_dir = r"...\final datasets\fooling datasets\elephants - 100x100"
 # NOTE: it can be advantageous to set this dir in the relevant code block below, so that one can re-execute only that
 #       code block with various fooling datasets
 
@@ -59,7 +59,7 @@ fig_dpi = 150       # dpi for saved figures
 fig_font_size = 12  # font size for figures
 
 random_initialization = False        # set False to use saved_weights from saved_weights dir in the next line
-saved_weights = r''
+saved_weights = r"...\CNN_for_nanoparticle-master\initial_weights_for_example.pth"
 
 set_random_seed = True     # set True to use the seed value in the next line
 seed_value = 100000
@@ -1055,7 +1055,8 @@ if confusion_flag:
             
             imlist = list(inputs)
             outputs1 = outputs.argmax(dim=1)
-            vec_equal = outputs1 == labels
+            #vec_equal = outputs1 == labels # CUDA
+            vec_equal = outputs1.float() == labels.float()
             
             if misclassified_outputs_flag:
                 
