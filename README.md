@@ -17,7 +17,15 @@ MAIN CODE GUIDE:
 4. In case of no CUDA: use ctrl+F to go through the script and comment out all lines that contain "cuda"
 5. Run the script
 
-For a basic test, make confusion_flag = True and batchnorm_flag = True while leaving the rest as False
+For a basic test, make confusion_flag = True (line 79) and batchnorm_flag = True (line 80) while leaving the rest as False
+
+If one is getting the following error:
+ 
+      f = open(f, 'rb') PermissionError: [Errno 13] Permission denied: '...\CNN_for_nanoparticle-master'
+ 
+They need to replace the single quote ' with the double quote ''
+e.g.
+DT = r"...\outputFolder"
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,9 +42,9 @@ To use the example code:
 3. Download the datasets  from https://doi.org/10.4121/uuid:516ab2fa-4c47-42f8-b614-5e283889b218
 4. Open example.py
 5. On line 46, enter the desired folder to store outputs
-6. On line 49, enter the location of "main dataset - 100x 100"
-7. On line 52, enter the location of "elephants - 100x 100"
-8. On line 62, enter the location of "initial_weights_for_example.pth"
+6. On line 49, enter the location of "...\final datasets\main dataset - 100x100"
+7. On line 52, enter the location of "...\final datasets\fooling datasets\elephants - 100x100"
+8. On line 62, enter the location of "...\CNN_for_nanoparticle-master\initial_weights.pth"
 9. Run the script
 
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -50,7 +58,7 @@ This is only possible when working on the CPU and setting a random seed. This is
 OPENMAX GUIDE:
 
 1. Download CNN_functions.py, OpenMax_masterscript.py, compute_openmax.py and evt_fitting.py from the folder OpenMax_code and put them in the same folder
-2. On line 44, enter the directory where outputs should be stored
-3. On line 47, enter the directory of the main dataset used for training
-4. On line 50, enter the directory of the fooling dataset
+2. On line 44, enter the directory where outputs should be stored (similar to EXAMPLE)
+3. On line 47, enter the directory of the main dataset used for training (similar to EXAMPLE)
+4. On line 50, enter the directory of the fooling dataset (similar to EXAMPLE)
 5. Run the script
