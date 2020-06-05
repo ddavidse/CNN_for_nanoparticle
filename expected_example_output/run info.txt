@@ -1,0 +1,75 @@
+-----------------------------------------------------------------------------------------
+
+BN_Net(
+  (features): Sequential(
+    (0): Conv2d(1, 5, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): ReLU(inplace=True)
+    (3): BatchNorm2d(5, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): Conv2d(5, 8, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): ReLU(inplace=True)
+    (7): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=5000, out_features=120, bias=True)
+    (1): ReLU(inplace=True)
+    (2): BatchNorm1d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Linear(in_features=120, out_features=84, bias=True)
+    (4): ReLU(inplace=True)
+    (5): BatchNorm1d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): Linear(in_features=84, out_features=5, bias=True)
+  )
+)
+
+-----------------------------------------------------------------------------------------
+
+Data used:
+
+Class 40 nm: 241 images
+Class 50 nm: 175 images
+Class 60 nm: 259 images
+Class 80 nm: 272 images
+Class background: 247 images
+
+Train set size: 792 images
+Val set length: 200 images
+Test set size: 	202 images
+
+Total size of dataset: 1194 images
+
+-----------------------------------------------------------------------------------------
+
+input_size = 100
+BS = 50
+epochs = 12
+STEPS = 5
+SeedVal = 100000
+
+Loss function: CrossEntropyLoss()
+
+Optimizer: 
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+-----------------------------------------------------------------------------------------
+
+Accuracy of the network on the test images: 93.0 %
+Test result obtained from 200 images coming from 4 batches
+
+Accuracy of the network on the total set of all images: 98.1 %
+Test result obtained from 1150 images coming from 23 batches
+
+Amount of images in high confidence set: 94
+This is 47.0% of the test set
+
+Amount of correctly classified images in high confidence set: 93
+Accuracy on high confidence set: 98.9 %
+
+-----------------------------------------------------------------------------------------

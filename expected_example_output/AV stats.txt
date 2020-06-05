@@ -1,0 +1,13 @@
+Correct predictions:
+
+AV_max = 10.08
+AV_min = 0.48
+AV_avg = 2.87
+AV_std = 1.20
+
+Wrong predictions:
+
+AV_max = 7.52
+AV_min = 3.06
+AV_avg = 5.19
+AV_std = 1.48

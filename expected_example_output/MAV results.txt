@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------------
+
+Accuracy on the original dataset: 		98.9 %
+Accuracy on thresholded original dataset: 	99.5 %
+
+Threshold: 4.7
+
+Part of the original dataset thrown away: 	6.8 %
+Part of the secondary dataset thrown away: 	72.3 %
+
+--------------------------------------------------------------------------------------
