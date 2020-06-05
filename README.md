@@ -47,6 +47,12 @@ To use the example code:
 8. On line 62, enter the location of "...\CNN_for_nanoparticle-master\initial_weights.pth"
 9. Run the script
 
+The resulting accuracy curve will look like this:
+
+![accuracy curve](https://github.com/ddavidse/CNN_for_nanoparticle/blob/master/expected_example_output/accuracy_curve.png?raw=true)
+
+Other results can be found in the "expected_example_output" folder
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 REPRODUCIBILITY
