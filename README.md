@@ -49,7 +49,7 @@ To use the example code:
 
 The resulting accuracy curve will look like this:
 
-![accuracy curve](https://github.com/ddavidse/CNN_for_nanoparticle/blob/master/expected_example_output/accuracy_curve.png?raw=true)
+<img src="https://github.com/ddavidse/CNN_for_nanoparticle/blob/master/expected_example_output/accuracy_curve.png" alt="Your image title" width="500"/>
 
 Other results can be found in the "expected_example_output" folder
 
